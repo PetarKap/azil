@@ -96,6 +96,7 @@
             this.Controls.Add(this.button1);
             this.Name = "frmPocetna";
             this.Text = "frmPocetna";
+            this.Load += new System.EventHandler(this.frmPocetna_Load);
             this.ResumeLayout(false);
 
         }

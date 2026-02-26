@@ -14,6 +14,7 @@ namespace azil
     {
         public frmPocetna()
         {
+      
             InitializeComponent();
         }
 
@@ -24,20 +25,25 @@ namespace azil
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form frmUnosZivotinje = new Form();
+            Form frmUnosZivotinje = new frmUnosZivotinje();
             frmUnosZivotinje.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form frmPregledZivotinja = new Form();
+            Form frmPregledZivotinja = new frmPregled();
             frmPregledZivotinja.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form frmFiltriranje = new Form();
+            Form frmFiltriranje = new frmFiltriranje();
             frmFiltriranje.ShowDialog();
+        }
+
+        private void frmPocetna_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,19 +39,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.imetxt = new System.Windows.Forms.TextBox();
+            this.vrstatxt = new System.Windows.Forms.TextBox();
+            this.Pasminatxt = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dobb = new System.Windows.Forms.NumericUpDown();
+            this.DateTimeDatum = new System.Windows.Forms.DateTimePicker();
+            this.Napomenatxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dobb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,26 +156,26 @@
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // imetxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.imetxt.Location = new System.Drawing.Point(126, 29);
+            this.imetxt.Name = "imetxt";
+            this.imetxt.Size = new System.Drawing.Size(100, 20);
+            this.imetxt.TabIndex = 11;
             // 
-            // textBox2
+            // vrstatxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 12;
+            this.vrstatxt.Location = new System.Drawing.Point(126, 68);
+            this.vrstatxt.Name = "vrstatxt";
+            this.vrstatxt.Size = new System.Drawing.Size(100, 20);
+            this.vrstatxt.TabIndex = 12;
             // 
-            // textBox3
+            // Pasminatxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 13;
+            this.Pasminatxt.Location = new System.Drawing.Point(126, 119);
+            this.Pasminatxt.Name = "Pasminatxt";
+            this.Pasminatxt.Size = new System.Drawing.Size(100, 20);
+            this.Pasminatxt.TabIndex = 13;
             // 
             // radioButton1
             // 
@@ -199,26 +199,26 @@
             this.radioButton2.Text = "Žensko";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // dobb
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(126, 198);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 16;
+            this.dobb.Location = new System.Drawing.Point(126, 198);
+            this.dobb.Name = "dobb";
+            this.dobb.Size = new System.Drawing.Size(120, 20);
+            this.dobb.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // DateTimeDatum
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(155, 244);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 17;
+            this.DateTimeDatum.Location = new System.Drawing.Point(155, 244);
+            this.DateTimeDatum.Name = "DateTimeDatum";
+            this.DateTimeDatum.Size = new System.Drawing.Size(200, 20);
+            this.DateTimeDatum.TabIndex = 17;
             // 
-            // textBox4
+            // Napomenatxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 350);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 18;
+            this.Napomenatxt.Location = new System.Drawing.Point(126, 350);
+            this.Napomenatxt.Name = "Napomenatxt";
+            this.Napomenatxt.Size = new System.Drawing.Size(100, 20);
+            this.Napomenatxt.TabIndex = 18;
             // 
             // button1
             // 
@@ -228,14 +228,16 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Spremi";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(420, 372);
+            this.button2.Location = new System.Drawing.Point(421, 372);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 23);
             this.button2.TabIndex = 20;
@@ -258,14 +260,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.Napomenatxt);
+            this.Controls.Add(this.DateTimeDatum);
+            this.Controls.Add(this.dobb);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Pasminatxt);
+            this.Controls.Add(this.vrstatxt);
+            this.Controls.Add(this.imetxt);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label9);
@@ -279,7 +281,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmUnosZivotinje";
             this.Text = "frmUnosZivotinje";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dobb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -299,14 +301,14 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox imetxt;
+        private System.Windows.Forms.TextBox vrstatxt;
+        private System.Windows.Forms.TextBox Pasminatxt;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.NumericUpDown dobb;
+        private System.Windows.Forms.DateTimePicker DateTimeDatum;
+        private System.Windows.Forms.TextBox Napomenatxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
