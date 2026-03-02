@@ -45,7 +45,8 @@ namespace azil
             System.IO.File.AppendAllText("zivotinje.txt", linija + Environment.NewLine);
             string ime_slike= openFileDialog1.FileName;
             string odredisna_putanja = System.IO.Path.Combine(Application.StartupPath, "slike", System.IO.Path.GetFileName(ime_slike));
-            Console.WriteLine("Slika i pas su uspješno spremni");
+            MessageBox.Show("Slika i pas su uspješno spremni");
+            Admin.SpremiZivotinju(linija);
 
         }
     }
