@@ -18,6 +18,9 @@ namespace azil
         public CheckBox Cijepljen { get; set; }
         public CheckBox Kastriran { get; set; }
         public  List<string> Napomena { get; set; }
+        public string Udomitelj { get; set; }
+        public int Kontakt { get; set; }    
+        public string Status { get; set; }  
 
 
 

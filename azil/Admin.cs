@@ -17,7 +17,7 @@ namespace azil
                 sw.WriteLine(zapis);
             }
         }
-        public static List<string> UcitajZivotinje()
+        public static List<Zivotinja> UcitajZivotinje()
         {
             List<Zivotinja> zivotinje = new List<Zivotinja>();
             if (File.Exists(filePath))
@@ -41,26 +41,19 @@ namespace azil
         public static List<string> PretraziZivotinje(string kriterij)
         {
             List<string> rezultat = new List<string>();
-            List<string> zivotinje = UcitajZivotinje();
-            foreach (string zivotinja in zivotinje)
+            List<Zivotinja> zivotinje = UcitajZivotinje();
+            foreach (Zivotinja zivotinja in zivotinje)
             {
-                if (zivotinja.Contains(kriterij))
+                if (zivotinja.vrsta.Contains(kriterij)||zivotinja.Status.Contains(kriterij))
                 {
-                    rezultat.Add(zivotinja);
+                    rezultat.Add(zivotinja.ime);
                 }
+                
             }
             return rezultat;
 
         }
     } 
-    public static List<string> Pretvori()
-        {
-            List<string> rezultat = new List<string>();
-            List<ZI>
-
-
-        } 
     
-    }
 
 }
