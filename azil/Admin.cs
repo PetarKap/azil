@@ -9,7 +9,7 @@ namespace azil
 {
     public class Admin
     {
-        private static string filePath = "zivotinje.txt";
+        public static string filePath = "zivotinje.txt";
         public static void SpremiZivotinju(string zapis)
         {
             using (StreamWriter sw = new StreamWriter(filePath, true))
