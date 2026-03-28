@@ -12,6 +12,7 @@ namespace azil
 {
     public partial class frmUnosZivotinje : Form
     {
+        string putanjaSlike = ""; 
         public frmUnosZivotinje()
         {
             InitializeComponent();
@@ -47,6 +48,32 @@ namespace azil
             string odredisna_putanja = System.IO.Path.Combine(Application.StartupPath, "slike", System.IO.Path.GetFileName(ime_slike));
             MessageBox.Show("Slika i pas su uspješno spremni");
             Admin.SpremiZivotinju(linija);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            // filter za slike
+            ofd.Filter = "Slike (*.jpg;*.png;*.bmp)|*.jpg;*.png;*.bmp";
+
+            // naslov prozora
+            ofd.Title = "Odaberi sliku životinje";
+
+            // otvaranje dijaloga
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                // spremi putanju
+                putanjaSlike = ofd.FileName;
+
+                // prikaži sliku u PictureBoxu
+                pictureBox1.Image = Image.FromFile(putanjaSlike);
+            }
+        }
+
+        private void frmUnosZivotinje_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -243,6 +243,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Odaberi sliku";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -281,6 +282,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmUnosZivotinje";
             this.Text = "frmUnosZivotinje";
+            this.Load += new System.EventHandler(this.frmUnosZivotinje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dobb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
