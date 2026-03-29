@@ -45,5 +45,17 @@ namespace azil
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form frmUdomljavanje = new frmUdomi();
+            frmUdomljavanje.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form frmStatistika = new frmStatistika();
+            frmStatistika.ShowDialog();
+        }
     }
 }

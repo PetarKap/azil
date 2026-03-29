@@ -27,12 +27,12 @@ namespace azil
                     string line;
                     while ((line = sr.ReadLine()) != null)
                     {
-                        string[] podaci = line.Split(',');  
+                        string[] podaci = line.Split(',');
                         Zivotinja k = new Zivotinja();
-                       k.ime = podaci[0];
+                        k.ime = podaci[0];
 
                         zivotinje.Add(k);
-                        
+
                     }
                 }
             }
@@ -44,16 +44,34 @@ namespace azil
             List<Zivotinja> zivotinje = UcitajZivotinje();
             foreach (Zivotinja zivotinja in zivotinje)
             {
-                if (zivotinja.vrsta.Contains(kriterij)||zivotinja.Status.Contains(kriterij))
+                if (zivotinja.vrsta.Contains(kriterij) || zivotinja.Status.Contains(kriterij))
                 {
                     rezultat.Add(zivotinja.ime);
                 }
-                
+
             }
             return rezultat;
 
         }
-    } 
-    
 
+        public static int BrojacZivotinja(string mate)
+        {
+            filePath = mate;
+
+            int brojac = 0;
+            if (File.Exists(filePath))
+            {
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        brojac++;
+                    }
+                }
+            }
+            return brojac;
+        }
+
+    }
 }

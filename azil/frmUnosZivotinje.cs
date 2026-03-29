@@ -41,8 +41,7 @@ namespace azil
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string linija = imetxt.Text+";" + vrstatxt.Text + ";"+Pasminatxt.Text+";"+radioButton1.Checked.ToString()+";"+ radioButton2.Checked.ToString() + 
-             Napomenatxt.Text+";"+pictureBox1.ImageLocation;
+            string linija = imetxt.Text+";" + vrstatxt.Text + ";"+Pasminatxt.Text+";"+radioButton1.Checked.ToString()+";"+putanjaSlike+";"+dobb.Value;
             System.IO.File.AppendAllText("zivotinje.txt", linija + Environment.NewLine);
             string ime_slike= openFileDialog1.FileName;
             string odredisna_putanja = System.IO.Path.Combine(Application.StartupPath, "slike", System.IO.Path.GetFileName(ime_slike));
@@ -55,19 +54,19 @@ namespace azil
         {
             OpenFileDialog ofd = new OpenFileDialog();
 
-            // filter za slike
+            
             ofd.Filter = "Slike (*.jpg;*.png;*.bmp)|*.jpg;*.png;*.bmp";
 
-            // naslov prozora
+            
             ofd.Title = "Odaberi sliku životinje";
 
-            // otvaranje dijaloga
+            
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                // spremi putanju
+                
                 putanjaSlike = ofd.FileName;
 
-                // prikaži sliku u PictureBoxu
+                
                 pictureBox1.Image = Image.FromFile(putanjaSlike);
             }
         }
