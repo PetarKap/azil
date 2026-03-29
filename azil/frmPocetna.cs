@@ -60,5 +60,6 @@ namespace azil
     }
 }// Pozdrav profesore , ovu poruku vamn šaljem kako bi manje gubili vrime tražeći moje greške . Dao sam sve od sebe i trudio sam se pisati kod koji razumijem jer nije mi cilj pisati 
 // i prepisivati tuđi pa da me još uhvatite . mislim da će najveća moja greška ovdje bila ta što sam u jednom dijelu slučajno izbrisao funckiju za dodavanje stvari u listboxi da mi je 
-// zbog toga došlo to tih grešaka ali mislim da ako zanemarite to onda je većina koda uredu (osim dijela za combo box na formi za filtriranje) . Pitajte me uživo bilo što i odgovorit ću vam 
+// zbog toga došlo to tih grešaka i izgubio sam fokus te sam se iživcira pa odusta ali mislim da ako zanemarite to onda je većina koda uredu (osim dijela za combo box na formi za filtriranje) .
+// Pitajte me uživo bilo što i odgovorit ću vam 
 // ako vam nije bilo jasno i molim Vas ne bude strogi 
