@@ -95,6 +95,12 @@
     <EmbeddedResource Include="frmPregledZivotinja.resx">
       <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistika.resx">
+      <DependentUpon>frmStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUdomi.resx">
+      <DependentUpon>frmUdomi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUnosZivotinje.resx">
       <DependentUpon>frmUnosZivotinje.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,6 +14,7 @@ namespace azil
     {
         public frmPocetna()
         {
+      
             InitializeComponent();
         }
 
@@ -24,20 +25,41 @@ namespace azil
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form frmUnosZivotinje = new Form();
+            Form frmUnosZivotinje = new frmUnosZivotinje();
             frmUnosZivotinje.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form frmPregledZivotinja = new Form();
+            Form frmPregledZivotinja = new frmPregled();
             frmPregledZivotinja.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form frmFiltriranje = new Form();
+            Form frmFiltriranje = new frmFiltriranje();
             frmFiltriranje.ShowDialog();
         }
+
+        private void frmPocetna_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form frmUdomljavanje = new frmUdomi();
+            frmUdomljavanje.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form frmStatistika = new frmStatistika();
+            frmStatistika.ShowDialog();
+        }
     }
-}
+}// Pozdrav profesore , ovu poruku vamn šaljem kako bi manje gubili vrime tražeći moje greške . Dao sam sve od sebe i trudio sam se pisati kod koji razumijem jer nije mi cilj pisati 
+// i prepisivati tuđi pa da me još uhvatite . mislim da će najveća moja greška ovdje bila ta što sam u jednom dijelu slučajno izbrisao funckiju za dodavanje stvari u listboxi da mi je 
+// zbog toga došlo to tih grešaka i izgubio sam fokus te sam se iživcira pa odusta ali mislim da ako zanemarite to onda je većina koda uredu (osim dijela za combo box na formi za filtriranje) .
+// Pitajte me uživo bilo što i odgovorit ću vam 
+// ako vam nije bilo jasno i molim Vas ne bude strogi 

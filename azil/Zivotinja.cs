@@ -9,15 +9,18 @@ namespace azil
 {
     public class Zivotinja
     {
-         string ime { get; set; }
-         string pasmina { get; set; }
-        string vrsta { get; set; }
-        int godine { get; set; }
-        RadioButton Spol { get; set; }
-        DateTime DatumDolaska { get; set; }
-        CheckBox Cijepljen { get; set; }
-        CheckBox Kastriran { get; set; }
-        List<string> Napomena { get; set; }
+          public string ime { get; set; }
+        public  string pasmina { get; set; }
+        public string vrsta { get; set; }
+        public int godine { get; set; }
+        public RadioButton Spol { get; set; }
+        public DateTime DatumDolaska { get; set; }
+        public CheckBox Cijepljen { get; set; }
+        public CheckBox Kastriran { get; set; }
+        public  List<string> Napomena { get; set; }
+        public string Udomitelj { get; set; }
+        public int Kontakt { get; set; }    
+        public string Status { get; set; }  
 
 
 
