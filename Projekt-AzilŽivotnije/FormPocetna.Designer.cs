@@ -40,9 +40,9 @@
             // 
             this.btn_Unos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_Unos.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Unos.Location = new System.Drawing.Point(12, 276);
+            this.btn_Unos.Location = new System.Drawing.Point(24, 128);
             this.btn_Unos.Name = "btn_Unos";
-            this.btn_Unos.Size = new System.Drawing.Size(207, 37);
+            this.btn_Unos.Size = new System.Drawing.Size(192, 30);
             this.btn_Unos.TabIndex = 0;
             this.btn_Unos.Text = "Unos Životinje";
             this.btn_Unos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -53,7 +53,7 @@
             // 
             this.btn_Pregled.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_Pregled.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Pregled.Location = new System.Drawing.Point(23, 585);
+            this.btn_Pregled.Location = new System.Drawing.Point(41, 214);
             this.btn_Pregled.Name = "btn_Pregled";
             this.btn_Pregled.Size = new System.Drawing.Size(111, 36);
             this.btn_Pregled.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.btn_Filtriranje.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_Filtriranje.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btn_Filtriranje.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Filtriranje.Location = new System.Drawing.Point(235, 585);
+            this.btn_Filtriranje.Location = new System.Drawing.Point(246, 214);
             this.btn_Filtriranje.Name = "btn_Filtriranje";
             this.btn_Filtriranje.Size = new System.Drawing.Size(178, 34);
             this.btn_Filtriranje.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.btn_Udomljavanje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_Udomljavanje.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Udomljavanje.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Udomljavanje.Location = new System.Drawing.Point(466, 291);
+            this.btn_Udomljavanje.Location = new System.Drawing.Point(451, 128);
             this.btn_Udomljavanje.Name = "btn_Udomljavanje";
             this.btn_Udomljavanje.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btn_Udomljavanje.Size = new System.Drawing.Size(177, 30);
@@ -96,7 +96,7 @@
             this.btn_Statistika.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_Statistika.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Statistika.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Statistika.Location = new System.Drawing.Point(264, 291);
+            this.btn_Statistika.Location = new System.Drawing.Point(259, 126);
             this.btn_Statistika.Name = "btn_Statistika";
             this.btn_Statistika.Size = new System.Drawing.Size(132, 32);
             this.btn_Statistika.TabIndex = 4;
@@ -110,7 +110,7 @@
             this.btn_Izlaz.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_Izlaz.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Izlaz.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Izlaz.Location = new System.Drawing.Point(499, 571);
+            this.btn_Izlaz.Location = new System.Drawing.Point(491, 212);
             this.btn_Izlaz.Name = "btn_Izlaz";
             this.btn_Izlaz.Size = new System.Drawing.Size(120, 36);
             this.btn_Izlaz.TabIndex = 5;
@@ -123,9 +123,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.BackgroundImage = global::Projekt_AzilŽivotnije.Properties.Resources.Izrezak;
-            this.ClientSize = new System.Drawing.Size(655, 631);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(655, 292);
             this.Controls.Add(this.btn_Izlaz);
             this.Controls.Add(this.btn_Statistika);
             this.Controls.Add(this.btn_Udomljavanje);

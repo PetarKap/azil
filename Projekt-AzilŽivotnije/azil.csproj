@@ -139,18 +139,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Snimka zaslona 2026-02-09 125738.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Snimka zaslona 2026-02-19 184419.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo-azil.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\azil-psic-s-usima-nasl.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Izrezak.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
