@@ -25,7 +25,7 @@ namespace Projekt_AzilŽivotnije
 
         private void FormFiltriranje_Load(object sender, EventArgs e)
         {
-            List<string> sveVrste = Admin.Vrste();
+            List<string> sveVrste = AdminKlasa.Vrste();
             comboBox1.Items.Clear();
             foreach (string v in sveVrste)
             {
@@ -43,7 +43,7 @@ namespace Projekt_AzilŽivotnije
             if (comboBox1.SelectedIndex == -1)
                 return;
             string odabranaVrsta = comboBox1.SelectedItem.ToString();
-            List <string> filtrirano = Admin.PronadiPoVrsti(odabranaVrsta);
+            List <string> filtrirano = AdminKlasa.PronadiPoVrsti(odabranaVrsta);
             listBox1.Items.Clear();
             foreach (string redak in filtrirano)
             {

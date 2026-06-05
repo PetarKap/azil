@@ -46,12 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
-    <Compile Include="FormLogin.cs">
+    <Compile Include="AdminKlasa.cs" />
+    <Compile Include="..\..\..\..\Desktop\Petar - školski folder\Informatika\Radovi - 3. razred\FormLogin.cs">
       <SubType>Form</SubType>
+      <Link>FormLogin.cs</Link>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="..\..\..\..\Desktop\Petar - školski folder\Informatika\Radovi - 3. razred\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+      <Link>FormLogin.Designer.cs</Link>
     </Compile>
     <Compile Include="FormPocetna.cs">
       <SubType>Form</SubType>
@@ -94,8 +96,9 @@
     <EmbeddedResource Include="FormFiltriranje.resx">
       <DependentUpon>FormFiltriranje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="..\..\..\..\Desktop\Petar - školski folder\Informatika\Radovi - 3. razred\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+      <Link>FormLogin.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPocetna.resx">
       <DependentUpon>FormPocetna.cs</DependentUpon>
@@ -140,6 +143,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Snimka zaslona 2026-02-19 184419.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-azil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azil-psic-s-usima-nasl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Izrezak.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

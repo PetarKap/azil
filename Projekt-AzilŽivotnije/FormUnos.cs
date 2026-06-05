@@ -77,7 +77,7 @@ namespace Projekt_AzilŽivotnije
             string napomena = textBox4.Text;
             string id = DateTime.Now.Ticks.ToString().Substring(10);
             string zapis = $"{id}|{ime}|{vrsta}|{pasmina}|{spol}|{dob}|{status}|{putanjaSlike}|{datumDolaska}||{cijepljen}|{kastriran}|{napomena}||";
-            Admin.Unos(zapis);
+            AdminKlasa.Unos(zapis);
             MessageBox.Show("Životinja je uspješno unesena!");
             this.Close();
         }    
@@ -95,6 +95,11 @@ namespace Projekt_AzilŽivotnije
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormUnos_Load(object sender, EventArgs e)
         {
 
         }

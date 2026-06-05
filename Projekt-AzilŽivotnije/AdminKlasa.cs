@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Projekt_AzilŽivotnije
 {
-    public static class Admin
+    public static class AdminKlasa
     {
 
 

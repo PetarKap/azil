@@ -23,7 +23,7 @@ namespace Projekt_AzilŽivotnije
             {
                 return;
             }
-            List<string> sveZivotinje = Admin.Ucitaj();
+            List<string> sveZivotinje = AdminKlasa.Ucitaj();
             string odabraniRedak = sveZivotinje[listBox1.SelectedIndex];
             string[] d = odabraniRedak.Split('|');
             lblIme.Text = "Ime: " + d[1];
@@ -50,7 +50,7 @@ namespace Projekt_AzilŽivotnije
 
         private void FormPregled_Load(object sender, EventArgs e)
         {
-            List<string> sveZivotinje = Admin.Ucitaj();
+            List<string> sveZivotinje = AdminKlasa.Ucitaj();
             listBox1.Items.Clear();
             foreach (string redak in sveZivotinje)
             {
@@ -69,7 +69,7 @@ namespace Projekt_AzilŽivotnije
                 DialogResult result = MessageBox.Show("Jeste li sigurni da želite obrisati ovu životinju?", "Potvrda brisanja", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    Admin.Obrisi(listBox1.SelectedIndex);
+                    AdminKlasa.Obrisi(listBox1.SelectedIndex);
                     FormPregled_Load(sender, e);
                     pbSlika.Image = null;
                     MessageBox.Show("Životinja je uspješno obrisana!");

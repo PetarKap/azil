@@ -39,7 +39,7 @@ namespace Projekt_AzilŽivotnije
                 MessageBox.Show("Odaberite životinju za udomljavanje.");
                 return;
             }
-            List<string>sve = Admin.Ucitaj();
+            List<string>sve = AdminKlasa.Ucitaj();
             string stariRedak = sve[listBox1.SelectedIndex];
             string[] d = stariRedak.Split('|');
             string imeUdomitelja = textBoxImePrezime.Text;
@@ -49,9 +49,9 @@ namespace Projekt_AzilŽivotnije
             string datumUdomljavanja = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string udomiteljInfo = $"{imeUdomitelja},{adresa},{oib}";
             string noviZapis = $"{d[0]}|{d[1]}|{d[2]}|{d[3]}|{d[4]}|{d[5]}|Udomljen|{d[7]}|{d[8]}|{datumUdomljavanja}|{d[10]}|{d[11]}|d{12}|{udomiteljInfo}|{telefon}";
-            Admin.UdomiZivotinju(listBox1.SelectedIndex, noviZapis);
+            AdminKlasa.UdomiZivotinju(listBox1.SelectedIndex, noviZapis);
             string zapisUdomitelj = $"{imeUdomitelja}|{oib}|{telefon}|Životinja: {d[1]}";
-            Admin.UnosUdomitelja(zapisUdomitelj);
+            AdminKlasa.UnosUdomitelja(zapisUdomitelj);
             MessageBox.Show("Životinja je uspješno udomljena!");
             this.Close();
         }
@@ -59,7 +59,7 @@ namespace Projekt_AzilŽivotnije
         private void FormUdomi_Load(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            List<string> sveZivotinje = Admin.Ucitaj();
+            List<string> sveZivotinje = AdminKlasa.Ucitaj();
             foreach (string redak in sveZivotinje)
             {
                 string[] d = redak.Split('|');
